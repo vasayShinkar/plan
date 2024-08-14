@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="plugin.css">
+</head>
+<body>
+    <div class="plan">333</div>
+ <div class="plan2"></div>
+    
+    <script src="plugin.js" ></script>
+    <script>
+     let plan = new Plan()
+     plan.setScope(new Date(2024, 7, 14), new Date(2024, 8, 4))
+     plan.setTasks(["Js", "English", "General education"])
+     plan.addEvent(new Date(2024, 7, 14), new Date(2024, 8, 1), "English", "reading 5 adaptive books", {})
+     plan.addEvent(new Date(2024, 7, 14), new Date(2024, 7, 20), "Js", "31 projects", {class: "1"})
+     plan.addEvent(new Date(2024, 7, 21), new Date(2024, 7, 25), "Js", "40  code wars tasks", {class: "1"})
+     plan.addEvent(new Date(2024, 7, 26), new Date(2024, 8, 3), "Js", "5 games in vanilla js", {class: "1"})
+     plan.addEvent(new Date(2024, 7, 20), new Date(2024, 7, 25), "General education", "Reading books about UI/UX design", {color: "#f9f9f9"})
+     let render = new Plan.Render(plan)
+     render.draw(".plan")
+
+</script>
+
+</body>
+</html>

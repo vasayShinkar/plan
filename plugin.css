@@ -1,0 +1,110 @@
+
+*, *::after, **::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+.plan {
+display: flex;
+gap: 0 10px;
+align-items: stretch;
+width: 100%;
+white-space: nowrap;
+--heightOfPlanSection: 50px;
+--border-radius: 10px;
+--WidthOfPlanSection: 70px;
+--padding-bottom: 4px;
+}
+.plan aside {
+    margin-top: var(--heightOfPlanSection);
+    flex: none;
+    padding: 0;
+}
+.plan aside li {
+    height: var(--heightOfPlanSection);
+    line-height: var(--heightOfPlanSection);
+    padding: 0 10px;
+    font-size: 16px;
+    background: rgb(253, 253, 223);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 2px #000;
+    text-align: left;
+    margin-bottom: var(--padding-bottom);
+}
+.plan aside li:not(:last-of-type) {
+    border-bottom: 3px solid #fff;
+}
+.plan section> header> ul {
+    display: flex;
+    height: var(--heightOfPlanSection);
+    align-items: center;
+    background: #f4f4f4;
+    opacity: 0.7;
+    margin: 0;
+    padding: 0;
+}
+
+.plan section> header> ul>li {
+    flex: none;
+    display: block;
+    width: var(--WidthOfPlanSection);
+    font-size: 13px;
+    height: var(--heightOfPlanSection);
+    border-left: 2px solid #fff;
+    border-radius: 4px;
+    line-height: var(--heightOfPlanSection);
+    box-shadow: 0 0 3px #000;
+
+
+}
+
+.plan>section {
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2px;
+    
+}
+
+.plan>section time {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.plan>section>header {
+    position: relative;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+}
+.plan time ul  {
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    gap: 2px;
+}
+.plan time ul li {
+    position: relative;
+    height: var(--heightOfPlanSection);
+    margin-bottom: var(--padding-bottom);
+}
+.plan time ul li div.task {
+    position: absolute;
+    height: var(--heightOfPlanSection);
+    align-items: center;
+    border-radius: var(--border-radius);
+    padding-left: 5px;
+    line-height: var(--heightOfPlanSection);
+    box-shadow: 0 0 2px #000;
+    filter: brightness(1.3);
+
+}
+
+
+
