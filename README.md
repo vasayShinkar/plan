@@ -15,5 +15,6 @@ let render = new Plan.Render(plan) - to create Render object
 render.draw(".plan") - to draw our plan board.
 
 
+Also in the classroom .plan in the css file you can change some styles for all the plan boards
 
 
