@@ -4,6 +4,7 @@ Vanilla javascript plugin for creating responsive adaptive schedules for your da
 
 
 To start using the plugin, you need to create a new Plan object.  Then there are several commands to configure the object for the plan. For example:
+
 plan.setTasks([category1, ..., categoryN]) - to add categories(number of vertical subscribed columns)
 
 
